@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Unit 4 Game</title>
+</head>
+
+<body>
+    <header>Crystal Collector</header>
+    <div id="wrapper" class="container">
+        <div class="row">
+            <div id="instructions" class="col-8">
+                <h3>Instructions</h3>
+                <p>You will be given a random target number at the start of the game. </p>
+                <p>There are four crystals below. Each crystal will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your score to the target score.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="targetscore" class="col-4"></div>
+            <div id="wins-losses" class="col-2">
+                <div id="wins" class="row"></div>
+                <div id="losses" class="row"></div>
+            </div>
+        </div>
+        <div id="crytalbuttons" class="row">
+            <button id="redCrystal" class="col-2">
+                <img src="assets/images/redcrystal.jpg" />
+            </button>
+            <button id="blueCrystal" class="col-2">
+                <img src="assets/images/bluecrystal.jpg" />
+            </button>
+            <button id="yellowCrystal" class="col-2">
+                <img src="assets/images/yellowcrystal.jpg" />
+            </button>
+            <button id="greenCrystal" class="col-2">
+                <img src="assets/images/greencrystal.jpg" />
+            </button>
+        </div>
+        <div id="scoreboard" class="row">
+            <p class="row col-4"></p>
+            <div id="score" class="row col-4"></div>
+        </div>
+
+    </div>
+
+</body>
+<!--jQuery-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Script-->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</html>
